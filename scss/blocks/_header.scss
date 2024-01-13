@@ -1,0 +1,52 @@
+.header {
+  padding: 30px 0;
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    gap: 150px;
+  }
+
+  &__logo-box {
+    width: 428px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__logo {
+  }
+
+  &__menu {
+  }
+
+  &__item {
+    opacity: 0.5;
+		transition: all 0.3s ease;
+
+		&:hover {
+			opacity: 1;
+		}
+
+    &._acitve {
+      opacity: 1;
+    }
+  }
+
+  &__link {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+  }
+}
+.menu {
+  &__list {
+    display: flex;
+    gap: 40px;
+  }
+}
